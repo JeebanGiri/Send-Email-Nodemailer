@@ -26,13 +26,13 @@ async function sendEmail() {
         clientId: config.clientId,
         clientSecret: config.clientSecret,
         refreshToken: config.refreshToken,
-        // accessToken: config.accessToken,
+        accessToken: config.accessToken,
       },
     });
 
     const details = {
       to: "jeebangiri942@gmail.com",
-      subject: "Welcome Email",
+      subject: "Welcome to the nodemailer..",
       Text: "Welcome to Nodemailer email service provider.",
     };
 
